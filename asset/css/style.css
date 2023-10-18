@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  color: #313131;
+  text-decoration: none;
+}
+body {
+  background-color: whitesmoke;
+}
+a,
+span,
+p {
+  font-family: "Lato";
+}
+/*Navbar style*/
+.brif3-main-navbar {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #313131;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 86%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav-brand a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.main-nav-menu {
+  display: flex;
+  gap: 6rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+.main-nav-menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main-nav-menu .active {
+  border-bottom: solid;
+  padding-bottom: 6px;
+}
+
+.brif3-main-navbar .sub-btn {
+  border: 2px solid #fff;
+  padding: 1% 2%;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.brif3-main-navbar .sub-btn:hover {
+  border: 2px solid #313131;
+  background-color: #181818;
+  transition: 0.5s;
+}
+
+/* Banner Style*/
+.brif3-banner-sec {
+  background-image: url(../img/BK.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3% 0;
+  display: flex;
+  justify-content: center;
+}
+.brif3-banner-content {
+  width: 50%;
+}
+.brif3-banner-content h1 {
+  font-size: 5rem;
+  width: 50%;
+  font-weight: bold;
+  color: #faebd7;
+}
+.brif3-banner-content p {
+  padding-bottom: 10%;
+  width: 75%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.brif3-banner-content a {
+  border: 2px solid #fff;
+  padding: 2% 7%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  color: #fff;
+}
+.brif3-banner-content a:hover {
+  border: 2px solid #313131;
+  background-color: #181818;
+  transition: 0.5s;
+}
+
+.brif3-banner-img img {
+  border-radius: 0 0 0 102px;
+}
+/*collectin style*/
+.collection-sec-header {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 4rem;
+}
+.collection-sec-para {
+  text-align: center;
+  padding: 0 30%;
+}
+.collection-items {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3% 10%;
+}
+.centered-text {
+  transform: translate(0%, -134%);
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+/*best fashion style*/
+.bestf-sec-container {
+  padding: 3% 10%;
+  display: flex;
+  justify-content: center;
+}
+.content-cont {
+  width: 42%;
+  padding: 5%;
+}
+.content-cont h2 {
+  font-size: 5rem;
+}
+.content-cont p {
+  font-size: 1.5em;
+  padding: 15% 0;
+}
+.bestf-stat {
+  padding: 7% 9% 4%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 3px 8px 17px #1b1b1a4f;
+  transform: translate(-21%, -24%);
+  margin: 0% -15%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.bestf-stat .bestf-stat-item span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.bestf-stat .bestf-stat-item h4 {
+  margin: 17% 0;
+  font-size: 1.2rem;
+}
+.brif3-ourproduct-sec h2 {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 4rem;
+}
+/*Our Best Product*/
+.ourp-container {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.item-content {
+  padding: 4%;
+  margin-bottom: 25%;
+}
+.item-content i {
+  color: #181818;
+}
+.item-content h3 {
+  padding: 2% 0;
+}
+.item-content .discount {
+  color: #ffc0cb;
+  text-decoration: line-through;
+  padding-right: 3%;
+}
+.brif3-WPSAUs-sec h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+.brif3-WPSAUs-sec .WPSAUs-para {
+  text-align: center;
+  padding: 1% 30%;
+  font-size: 1.2rem;
+}
+
+/* carousel style*/
+.gallery {
+  margin: 5% 0;
+}
+.gallery-cell {
+  width: 40%;
+  margin-right: 10px;
+  background: #eaeaea;
+  counter-increment: gallery-cell;
+  text-align: center;
+}
+
+/**/
+.item-card {
+  padding: 10%;
+}
+.item-card .p1 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 6%;
+}
+
+.item-card .p2 {
+  font-size: 1.2rem;
+  padding-bottom: 20%;
+}
+.item-card h4 {
+  font-size: 1.3rem;
+}
+.item-card span {
+  font-weight: 900;
+}
+/*Brands styling*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3360px;
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+/* Footer Style*/
+.brif3-footer-sec {
+  background-color: #4a2402;
+  padding: 5%;
+  text-align: center;
+}
+.brif3-footer-sec .cprt {
+  display: block;
+  color: #faebd7;
+  font-weight: bold;
+}
+.tos span:nth-child(1) {
+  margin-right: 1%;
+}
+.tos span:nth-child(2) {
+  margin-left: 1%;
+}
+.brif3-footer-sec .tos span {
+  color: #faebd7;
+
+  font-weight: bold;
+}
