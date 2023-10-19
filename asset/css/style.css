@@ -267,7 +267,7 @@ p {
 }
 /* Footer Style*/
 .brif3-footer-sec {
-  background-color: #4a2402;
+  background-color: #1b1b1b;
   padding: 5%;
   text-align: center;
 }
@@ -284,6 +284,116 @@ p {
 }
 .brif3-footer-sec .tos span {
   color: #faebd7;
-
   font-weight: bold;
+}
+/* catalog page*/
+.brif-page-header {
+  background-image: url(../img/Group\ 81.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.brif-page-header h1 {
+  font-size: 9em;
+
+  color: wheat;
+
+  text-transform: capitalize;
+}
+.brif-page-header p {
+  color: white;
+  padding: 1% 24%;
+  font-size: 1.4rem;
+}
+.brif3-catalog-sec {
+  text-align: center;
+}
+.brif3-catalog-sec h2 {
+  padding-top: 2%;
+  font-size: 7rem;
+}
+.brif3-catalog-sec p {
+  font-size: 1.4rem;
+  padding: 1% 0;
+}
+.sec-catalog-contents {
+  padding: 5% 10%;
+}
+.sec-catalog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 4%;
+}
+.btn-see-more {
+  border: 3px solid black;
+  padding: 1% 3%;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+.btn-see-more:hover {
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+}
+/*sign up stayling*/
+.sginup-sec-content {
+  padding: 5% 20%;
+}
+.signup-form {
+  width: 35%;
+  padding: 7%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+}
+.signup-form h2 {
+  font-size: 2.1rem;
+  margin-bottom: 5%;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  padding: 5%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.signup-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form button:hover {
+  background-color: #45a049;
+}
+.signup-img {
+  position: relative;
+  top: -48rem;
+  left: 26rem;
+  z-index: -1;
+}
+.signup-img img {
+  width: 66%;
 }
