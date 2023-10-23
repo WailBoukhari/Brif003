@@ -38,6 +38,9 @@
   .bestf-stat {
     width: 150%;
   }
+  .item-card {
+    padding: 8% 12%;
+  }
 }
 @media (max-width: 768px) {
   .brif3-mobile-menu {
@@ -91,5 +94,11 @@
     color: white;
     padding: 3% 2%;
     font-size: 1.2rem;
+  }
+  .item-card {
+    padding: 8% 5%;
+  }
+  .item-card .p1 {
+    font-size: 1.7rem;
   }
 }
