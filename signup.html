@@ -129,30 +129,52 @@
     </footer>
 
     <script>
+      // Select the HTML element with the class "brif3-menu-toggle" and store it in the variable menuToggle
       const menuToggle = document.querySelector(".brif3-menu-toggle");
+
+      // Select the HTML element with the class "brif3-dropdown-menu" and store it in the variable dropdownMenu
       const dropdownMenu = document.querySelector(".brif3-dropdown-menu");
 
+      // Add a click event listener to the menuToggle element
       menuToggle.addEventListener("click", () => {
+        // When menuToggle is clicked, toggle the display property of dropdownMenu
+
+        // Check if the current display style of dropdownMenu is "block"
         dropdownMenu.style.display =
           dropdownMenu.style.display === "block" ? "none" : "block";
-      });
-      // JavaScript to toggle the visibility of answers when clicking on questions
 
+        // Explanation of the line above:
+        // If dropdownMenu is currently visible ("block"), set its display style to "none" (hide it)
+        // If dropdownMenu is currently hidden, set its display style to "block" (show it)
+      });
+
+      // JavaScript to toggle the visibility of answers when clicking on questions
+      // Select all HTML elements with the class "faq-item" and store them in the NodeList faqItems
       const faqItems = document.querySelectorAll(".faq-item");
 
+      // Iterate over each FAQ item in the faqItems NodeList
       faqItems.forEach((item) => {
+        // For each FAQ item, select the element with class "question" inside the current item
         const question = item.querySelector(".question");
+
+        // Select the element with class "answer" inside the current item
         const answer = item.querySelector(".answer");
 
+        // Add a click event listener to the question element within the current FAQ item
         question.addEventListener("click", () => {
-          // Toggle the visibility of the answer
+          // Toggle the visibility of the answer when the question is clicked
+
+          // Check if the current display style of the answer is "none" or empty
           answer.style.display =
             answer.style.display === "none" || answer.style.display === ""
-              ? "block"
-              : "none";
+              ? "block" // If answer is hidden or has no display style, set its display style to "block" (show it)
+              : "none"; // If answer is visible, set its display style to "none" (hide it)
         });
       });
+
+      // Define the validateForm function
       function validateForm() {
+        // Get values from input fields (username, email, and password)
         var username = document.getElementById("username").value;
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
@@ -161,27 +183,27 @@
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
-        // Validate email using regex
+        // Validate email using regex pattern
         if (!emailPattern.test(email)) {
-          alert("Invalid email address!");
-          return false;
+          alert("Invalid email address!"); // Show an alert if email is not valid
+          return false; // Prevent form submission
         }
 
-        // Validate password using regex
+        // Validate password using regex pattern
         if (!passwordPattern.test(password)) {
           alert(
             "Password must be at least 8 characters long and contain at least one letter and one number."
-          );
-          return false;
+          ); // Show an alert if password is not valid
+          return false; // Prevent form submission
         }
 
-        // Check if username is empty
+        // Check if the username is empty
         if (username === "") {
-          alert("Username is required!");
-          return false;
+          alert("Username is required!"); // Show an alert if username is empty
+          return false; // Prevent form submission
         }
 
-        // If all validations pass, the form will be submitted
+        // If all validations pass, the form is considered valid and can be submitted
         return true;
       }
     </script>

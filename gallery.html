@@ -59,12 +59,23 @@
     </footer>
 
     <script>
+      // Select the HTML element with the class "brif3-menu-toggle" and store it in the variable menuToggle
       const menuToggle = document.querySelector(".brif3-menu-toggle");
+
+      // Select the HTML element with the class "brif3-dropdown-menu" and store it in the variable dropdownMenu
       const dropdownMenu = document.querySelector(".brif3-dropdown-menu");
 
+      // Add a click event listener to the menuToggle element
       menuToggle.addEventListener("click", () => {
+        // When menuToggle is clicked, toggle the display property of dropdownMenu
+
+        // Check if the current display style of dropdownMenu is "block"
         dropdownMenu.style.display =
           dropdownMenu.style.display === "block" ? "none" : "block";
+
+        // Explanation of the line above:
+        // If dropdownMenu is currently visible ("block"), set its display style to "none" (hide it)
+        // If dropdownMenu is currently hidden, set its display style to "block" (show it)
       });
     </script>
   </body>
