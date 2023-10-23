@@ -7,6 +7,7 @@ body {
   background-color: whitesmoke;
 }
 a,
+label,
 span,
 p {
   font-family: "Lato";
@@ -118,6 +119,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   padding: 3% 10%;
+  flex-wrap: wrap;
 }
 .centered-text {
   transform: translate(0%, -134%);
@@ -129,57 +131,29 @@ p {
   text-transform: capitalize;
   font-weight: bolder;
 }
-/*best fashion style*/
-.bestf-sec-container {
-  padding: 3% 10%;
-  display: flex;
-  justify-content: center;
-}
-.content-cont {
-  width: 42%;
-  padding: 5%;
-}
-.content-cont h2 {
-  font-size: 5rem;
-}
-.content-cont p {
-  font-size: 1.5em;
-  padding: 15% 0;
-}
-.bestf-stat {
-  padding: 7% 9% 4%;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 3px 8px 17px #1b1b1a4f;
-  transform: translate(-21%, -24%);
-  margin: 0% -15%;
-  text-align: center;
-  background-color: #fff;
-}
-
-.bestf-stat .bestf-stat-item span {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.bestf-stat .bestf-stat-item h4 {
-  margin: 17% 0;
-  font-size: 1.2rem;
-}
+/*Our Best Product*/
 .brif3-ourproduct-sec h2 {
+  margin: 5rem 0;
   text-align: center;
-  padding: 2% 0;
   font-size: 4rem;
 }
-/*Our Best Product*/
+.ourp-item {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.ourp-item img {
+  width: 100%;
+}
 .ourp-container {
+  grid-gap: 2rem;
+
   padding: 0 10%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .item-content {
   padding: 4%;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
+  text-align: left;
 }
 .item-content i {
   color: #181818;
@@ -193,6 +167,7 @@ p {
   padding-right: 3%;
 }
 .brif3-WPSAUs-sec h2 {
+  margin-top: 5rem;
   text-align: center;
   font-size: 4rem;
 }
@@ -214,9 +189,10 @@ p {
   text-align: center;
 }
 
-/**/
+/*testi styling*/
 .item-card {
-  padding: 10%;
+  padding: 8% 16%;
+  height: 23rem;
 }
 .item-card .p1 {
   font-size: 2rem;
@@ -245,14 +221,15 @@ p {
   }
 }
 
+/*brands styling*/
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 100%;
 }
 
 .slide-track {
@@ -276,12 +253,17 @@ p {
   color: #faebd7;
   font-weight: bold;
 }
+.tos {
+  padding: 1%;
+  margin-left: 2%;
+}
 .tos span:nth-child(1) {
   margin-right: 1%;
 }
 .tos span:nth-child(2) {
   margin-left: 1%;
 }
+
 .brif3-footer-sec .tos span {
   color: #faebd7;
   font-weight: bold;
@@ -325,6 +307,9 @@ p {
   grid-gap: 2rem;
   margin-bottom: 4%;
 }
+.sec-catalog-items .items img {
+  width: 100%;
+}
 .btn-see-more {
   border: 3px solid black;
   padding: 1% 3%;
@@ -340,60 +325,153 @@ p {
 }
 /*sign up stayling*/
 .sginup-sec-content {
-  padding: 5% 20%;
+  padding: 5% 0;
+  display: flex;
+  justify-content: center;
 }
 .signup-form {
-  width: 35%;
-  padding: 7%;
+  padding: 4%;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  background-color: white;
+  background-color: #ebebeb;
+  width: 554px;
 }
 .signup-form h2 {
   font-size: 2.1rem;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+  text-transform: uppercase;
+  font-family: "Lato";
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .signup-form label {
   display: block;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .signup-form input[type="text"],
 .signup-form input[type="email"],
 .signup-form input[type="password"] {
-  padding: 5%;
+  padding: 4% 5%;
   margin-top: 5px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
   width: 90%;
+  background-color: #d9d9d9;
 }
 
 .signup-form button {
-  background-color: #4caf50;
+  background-color: #363636;
   color: white;
-  padding: 12px 20px;
+  padding: 22px 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  width: 100%;
 }
 
 .signup-form button:hover {
-  background-color: #45a049;
+  background-color: #000000;
+  transition: 0.5s;
 }
-.signup-img {
+/*mobile menu*/
+
+.brif3-mobile-menu {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.brif3-menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.brif3-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  background-color: #2a2a2a;
+  padding: 9% 0;
+  width: 100%;
+}
+.brif3-mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.brif3-mobile-menu .brif3-dropdown-menu a {
+  padding: 34px;
+}
+
+.brif3-dropdown {
   position: relative;
-  top: -48rem;
-  left: 26rem;
-  z-index: -1;
+  display: inline-block;
 }
-.signup-img img {
-  width: 66%;
+
+.brif3-dropbtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.brif3-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* FAQ styling */
+.faq-container {
+  margin: 0 auto;
+  padding: 40px;
+
+  width: 80%;
+  text-align: center;
+}
+.faq-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.faq-item {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.question {
+  color: #3e3e3e;
+  background-color: #d9d9d9;
+  padding: 1%;
+}
+
+.answer {
+  color: #000000;
+  background-color: #c2c2c2;
+  padding: 1%;
+  width: 97%;
+  display: none;
 }

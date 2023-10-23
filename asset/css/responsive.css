@@ -1,0 +1,95 @@
+@media (max-width: 1280px) {
+  .bestf-sec-container {
+    padding: 3% 5%;
+  }
+  .brif3-banner-content h1 {
+    width: 80%;
+  }
+  .sec-catalog-contents {
+    padding: 5% 0;
+  }
+  .sec-catalog-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ourp-container {
+    padding: 0 25px;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .brif3-banner-content h1 {
+    width: 90%;
+  }
+  .content-cont h2 {
+    font-size: 4rem;
+  }
+  .content-cont {
+    width: 65%;
+    padding: 5%;
+  }
+  .content-cont p {
+    font-size: 1.2em;
+  }
+  .ourp-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bestf-stat {
+    width: 150%;
+  }
+}
+@media (max-width: 768px) {
+  .brif3-mobile-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .brif3-main-navbar {
+    display: none;
+  }
+
+  .brif3-banner-img {
+    display: none;
+  }
+  .collection-sec-para {
+    text-align: center;
+    padding: 0 10%;
+    font-size: 1.4rem;
+  }
+  .brif3-banner-content {
+    text-align: center;
+    width: 100%;
+  }
+  .brif3-banner-content h1 {
+    width: 100%;
+    padding: 11% 0;
+  }
+  .brif3-banner-content p {
+    width: 100%;
+  }
+  .content-cont {
+    width: 84%;
+    padding: 5%;
+    text-align: center;
+  }
+  .brif-page-header h1 {
+    font-size: 6em;
+  }
+  .faq-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .ourp-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brif3-banner-sec {
+    padding: 8% 0;
+  }
+  .brif-page-header p {
+    color: white;
+    padding: 3% 2%;
+    font-size: 1.2rem;
+  }
+}

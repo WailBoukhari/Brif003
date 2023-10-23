@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/style.css" />
-
+    <link rel="stylesheet" href="asset/css/responsive.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -27,6 +27,18 @@
             <a href="gallery.html">Gallery</a>
           </div>
           <a class="sub-btn" href="signup.html">Subscibe</a>
+        </div>
+      </nav>
+      <nav class="brif3-mobile-menu">
+        <div><a href="index.html">FashH</a></div>
+        <div>
+          <button class="brif3-menu-toggle">☰</button>
+          <div class="brif3-dropdown-menu">
+            <a href="index.html">Home</a>
+            <a class="active" href="catalog.html">Catalog</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="sub-btn" href="signup.html">Subscibe</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -127,5 +139,14 @@
       </div>
     </footer>
     <script href="asset/js/main.js"></script>
+    <script>
+      const menuToggle = document.querySelector(".brif3-menu-toggle");
+      const dropdownMenu = document.querySelector(".brif3-dropdown-menu");
+
+      menuToggle.addEventListener("click", () => {
+        dropdownMenu.style.display =
+          dropdownMenu.style.display === "block" ? "none" : "block";
+      });
+    </script>
   </body>
 </html>
