@@ -99,21 +99,30 @@
 
         <!-- FAQ section in your existing HTML -->
         <div class="faq-item">
-          <h2 class="question">Q: What is Lorem Ipsum?</h2>
+          <h2 class="question">
+            Q: What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the
+            printing and typesetting
+          </h2>
           <p class="answer">
             A: Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
         </div>
         <div class="faq-item">
-          <h2 class="question">Q: What is Lorem Ipsum?</h2>
+          <h2 class="question">
+            Q: What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the
+            printing and typesetting
+          </h2>
           <p class="answer">
             A: Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
         </div>
         <div class="faq-item">
-          <h2 class="question">Q: What is Lorem Ipsum?</h2>
+          <h2 class="question">
+            Q: What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the
+            printing and typesetting
+          </h2>
           <p class="answer">
             A: Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -140,8 +149,11 @@
         // When menuToggle is clicked, toggle the display property of dropdownMenu
 
         // Check if the current display style of dropdownMenu is "block"
-        dropdownMenu.style.display =
-          dropdownMenu.style.display === "block" ? "none" : "block";
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
 
         // Explanation of the line above:
         // If dropdownMenu is currently visible ("block"), set its display style to "none" (hide it)
@@ -164,11 +176,11 @@
         question.addEventListener("click", () => {
           // Toggle the visibility of the answer when the question is clicked
 
-          // Check if the current display style of the answer is "none" or empty
-          answer.style.display =
-            answer.style.display === "none" || answer.style.display === ""
-              ? "block" // If answer is hidden or has no display style, set its display style to "block" (show it)
-              : "none"; // If answer is visible, set its display style to "none" (hide it)
+          if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block"; // If answer is hidden or has no display style, set its display style to "block" (show it)
+          } else {
+            answer.style.display = "none"; // If answer is visible, set its display style to "none" (hide it)
+          }
         });
       });
 

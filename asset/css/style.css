@@ -128,7 +128,7 @@ p {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  border-radius: 10px;
+
   text-transform: capitalize;
   font-weight: bolder;
 }
@@ -475,4 +475,10 @@ p {
   padding: 1%;
   width: 97%;
   display: none;
+}
+/*gallery styling*/
+.gallery-cell-modification {
+  width: 100%;
+
+  margin-right: 10px;
 }

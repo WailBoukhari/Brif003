@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/style.css" />
     <link rel="stylesheet" href="asset/css/responsive.css" />
+    <!--Flickity CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -51,13 +56,53 @@
         officiis.
       </p>
     </section>
+    <section class="brif3-gallery-sec">
+      <div class="gallery-content-container">
+        <div class="gallery-img">
+          <!-- Flickity HTML init -->
+
+          <div
+            class="gallery js-flickity"
+            data-flickity-options='{ "wrapAround": true }'
+          >
+            <div class="gallery-cell gallery-cell-modification">
+              <div class="item-card">
+                <img src="asset/img/cat1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="gallery-cell gallery-cell-modification">
+              <div class="item-card">
+                <img src="asset/img/cat1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="gallery-cell gallery-cell-modification">
+              <div class="item-card">
+                <img src="asset/img/cat1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="gallery-cell gallery-cell-modification">
+              <div class="item-card">
+                <img src="asset/img/cat1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="gallery-cell gallery-cell-modification">
+              <div class="item-card">
+                <img src="asset/img/cat1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-content"></div>
+      </div>
+    </section>
     <footer class="brif3-footer-sec">
       <span class="cprt">Copyright 2023</span>
       <div class="tos">
         <span>Privacy Policy </span><span>Terms and Conditions </span>
       </div>
     </footer>
-
+    <!--Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       // Select the HTML element with the class "brif3-menu-toggle" and store it in the variable menuToggle
       const menuToggle = document.querySelector(".brif3-menu-toggle");
@@ -70,8 +115,11 @@
         // When menuToggle is clicked, toggle the display property of dropdownMenu
 
         // Check if the current display style of dropdownMenu is "block"
-        dropdownMenu.style.display =
-          dropdownMenu.style.display === "block" ? "none" : "block";
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
 
         // Explanation of the line above:
         // If dropdownMenu is currently visible ("block"), set its display style to "none" (hide it)

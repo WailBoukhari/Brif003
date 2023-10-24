@@ -32,7 +32,7 @@
     font-size: 1.2em;
   }
   .ourp-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .bestf-stat {
@@ -85,7 +85,7 @@
     text-align: center;
   }
   .ourp-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .brif3-banner-sec {
     padding: 8% 0;
@@ -100,5 +100,18 @@
   }
   .item-card .p1 {
     font-size: 1.7rem;
+  }
+  .collection-item-card img {
+    width: 550px !important;
+  }
+  .sec-catalog-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-see-more {
+    padding: 3% 38%;
+  }
+  .brif3-catalog-sec h2 {
+    padding-top: 10%;
+    font-size: 4rem;
   }
 }

@@ -935,8 +935,11 @@
         // When menuToggle is clicked, toggle the display property of dropdownMenu
 
         // Check if the current display style of dropdownMenu is "block"
-        dropdownMenu.style.display =
-          dropdownMenu.style.display === "block" ? "none" : "block";
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
 
         // Explanation of the line above:
         // If dropdownMenu is currently visible ("block"), set its display style to "none" (hide it)
